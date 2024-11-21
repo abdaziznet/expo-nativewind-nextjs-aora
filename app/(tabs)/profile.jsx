@@ -25,16 +25,7 @@ const Profile = () => {
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
-        renderItem={({ item }) => (
-          <VideoCard
-            video={item}
-            // title={item.title}
-            // thumbnail={item.thumbnail}
-            // video={item.video}
-            // creator={item.creator.username}
-            // avatar={item.creator.avatar}
-          />
-        )}
+        renderItem={({ item }) => <VideoCard video={item} />}
         ListEmptyComponent={() => (
           <EmptyState
             title="No Videos Found"
