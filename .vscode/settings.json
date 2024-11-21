@@ -6,6 +6,7 @@
         "appwrite",
         "pmedium",
         "pregular",
-        "psemibold"
+        "psemibold",
+        "viewabilityConfig"
     ]
 }
